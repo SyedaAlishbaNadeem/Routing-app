@@ -6,21 +6,24 @@ import {useNavigate, useLocation} from 'react-router-dom';
 
 
 
-function Contactt() {
+function Contact() {
 
 const navigate = useNavigate();
 const location = useLocation();
 
 let clickEvent = () => {
-  navigate('about');
+  navigate('/about');
 }
 console.log(location.state);
 
   return (
     <>
+{/* 
+    <h1>   <Button variant="contained"> Contact with {location.state.title}  </Button> </h1> */}
+    <br/>
+  <Button variant="contained"> Contact with {location.state.title}</Button>
 
-    <h1>   <Button variant="contained"> Contact   </Button> </h1>
-    <h1>   <Button  variant="outlined" onClick={ () => navigate( "/") }   >Go to home </Button> </h1>
+    <h1>   <Button  variant="outlined" onClick={ () => navigate( "/") }>Go to home </Button> </h1>
 
     <h1> <Button variant="outlined" onClick= {clickEvent} > go to about </Button></h1>
 
@@ -34,4 +37,4 @@ console.log(location.state);
   );
 }
 
-export default Contactt;
+export default Contact;

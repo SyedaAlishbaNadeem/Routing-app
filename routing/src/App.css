@@ -45,12 +45,6 @@
 }
 
 
-
-
-
-
-
-
 .link{
 text-decoration: none;
 justify-content:space-between;
@@ -58,4 +52,9 @@ margin:10px;
 font-style:italic;
 margin-top: 5px;
 font-weight:bold;
+}
+
+
+.card{
+  text-align:center;
 }

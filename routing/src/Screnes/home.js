@@ -39,11 +39,7 @@ const [list, setList] = useState ([
 
 
 
-// let moveData = (data) => {
-//   navigate('./Contact',{
-//     state:data
-//   } )
-// }
+
 
   return (
     <>
@@ -55,7 +51,6 @@ const [list, setList] = useState ([
 
 
 
- {/* <button onClick={moveData} > move  to contact with data  </button> */}
 
 { list.map((e,i)=> <p key={i} onClick={ ()=> moveData(e)}> {e.title} </p>)} 
 

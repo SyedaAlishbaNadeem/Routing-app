@@ -20,6 +20,8 @@ import Dashboard from '../Screnes/dashboard';
 
 
 
+
+
 export default function AppRouter() {
   return (
     <Router>
@@ -30,6 +32,8 @@ export default function AppRouter() {
     <NavLink className="link" to="Service" > Service </NavLink>
     <NavLink className="link" to="Album" > Landing page </NavLink>
      <NavLink  className="link"  to="dashboard"> Dashboard </NavLink>   
+ 
+  
 
     </div>
 
@@ -42,6 +46,7 @@ export default function AppRouter() {
 <Route path="Album" element={<Album/>} />
 <Route path="profile/:userName" element={<Profile/>} />
 <Route path="dashboard/*" element={<Dashboard/>} />
+
 
 
 
